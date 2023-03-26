@@ -62,18 +62,35 @@
      }
      .copy-btn:hover{
         background-color: aliceblue;
+        color: black;
      }
     </style>
 </head>
 <body>
     <div class="main-container">
  <div class="image-container">
-        <img src="./imges/img.jpg" class="img-block">
-    <button class="gen-btn">genrate</button>
+        <img src="./imges/img.jpg" class="img-block" id="img-block">
+    <button class="gen-btn" onclick="generator()">genrate</button>
 </div>
 <div class="link-box">
-    <input type="text" class="input-box"><button class="copy-btn"> Copy<img src="./../pratik/pb-images/copy.png" class="cpy-icon" ></button>
+    <input type="text" class="input-box" id="imagelink" src="http://127.0.0.1:5500/kalyani.N/imges/img.jpg"><button class="copy-btn"> Copy<img src="./../pratik/pb-images/copy.png" class="cpy-icon" ></button>
 </div>
 </div>
+
+
+<script>
+   function generator(){
+      
+    const min =1 ;
+    const max =10;
+
+    const number = Math.floor(Math.random() * (max - min + 1)) +min;
+     const cardimg = document.getElementById("img-block");
+     const images = ["./../kalyani.N/imges/img.jpg", "./../kalyani.N/imges/img2.jpg","./../kalyani.N/imges/img3.jpg","./../kalyani.N/imges/img4.jpg","./../kalyani.N/imges/img5.jpg","./../kalyani.N/imges/img6.jpg","./../kalyani.N/imges/img7.jpg","./../kalyani.N/imges/img8.jpg","./../kalyani.N/imges/img9.jpg","./../kalyani.N/imges/img10.jpg"];
+     cardimg.src = images[number-1];
+
+   }
+   
+</script>
 </body>
 </html>
