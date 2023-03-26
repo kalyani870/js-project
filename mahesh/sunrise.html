@@ -1,10 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  >
 <head>
      
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="img-container"> 
+        <img src="./../mahesh/images/sunrise1.jpg" class="card-image" id="card-image"/> 
+        
+        <div class="img-info"> 
+        <div class="img-text">
+            <p><input class="text-img" id="imagelink" type="text" image text /></p></div>
+        <div ><button class="copy-btn" id="copybtn" value="copy" onclick="copybtn()" ><img src="./imagitges/copy3.png" /></button>
+        </div></div>
+        <div ><button class="btn1"  onclick="nextbtn1()">generate</button></div>
+        </div>
+   </div>
+   <script>
+    function nextbtn1(){ 
+    const min =1 ;
+    const max =10;
+
+    const number = Math.floor(Math.random() * (max - min + 1)) +min;
+     const cardimg = document.getElementById("card-image");
+     const images = ["./../mahesh/images/sunrise1.jpg", "./../mahesh/images/sunrise2.jpg","./../mahesh/images/sunrise3.jpg","./../mahesh/images/sunrise4.jpg","./../mahesh/images/sunrise5.jpg","./../mahesh/images/sunrise6.jpg","./../mahesh/images/sunrise7.jpg","./../mahesh/images/sunrise8.jpg","./../mahesh/images/sunrise9.jpg","./../mahesh/images/sunrise10.jpg"];
+     cardimg.src = images[number-1];g
+    }
+    </script>
 </body>
 </html>
