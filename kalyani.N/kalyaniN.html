@@ -19,11 +19,13 @@
            margin-top: 8px;
             margin-bottom: 40px;
             border: solid 5px rgb(27, 11, 11);
-            
+            align-items: center;
         }
         .card-image{
-            
-            width:100%;
+            width: 100%;
+            height:100%;
+            align-items: center;
+            margin-left:auto ;
             
         }
         .btn1{
@@ -86,25 +88,25 @@
     
 </head>
 <body>
-    <div class="img-container">
+    <div class="img-container"> 
         <img src="./../kalyani.N/imges/img.jpg" class="card-image" id="card-image"/> 
         
         <div class="img-info"> 
         <div class="img-text">
             <p><input class="text-img" id="imagelink" type="text" image text /></p></div>
-        <div ><button class="copy-btn" id="copybtn" value="copy" onclick="copybtn()" ><img src="./../kalyani.N/imges/copy3.png" /></button>
+        <div ><button class="copy-btn" id="copybtn" value="copy" onclick="copybtn()" ><img src="./imges/copy3.png" /></button>
         </div></div>
         <div ><button class="btn1"  onclick="nextbtn1()">generate</button></div>
         </div>
    </div>
    <script>
-    function nextbtn1(){
-    const min= 1;
-    const max = 3;
+    function nextbtn1(){ 
+    const min =1 ;
+    const max =10;
 
     const number = Math.floor(Math.random() * (max - min + 1)) +min;
      const cardimg = document.getElementById("card-image");
-     const images = ["./../kalyani.N/imges/img.jpg", "./../kalyani.N/imges/img2.jpg","./../kalyani.N/imges/img3.jpg"];
+     const images = ["./../kalyani.N/imges/img.jpg", "./../kalyani.N/imges/img2.jpg","./../kalyani.N/imges/img3.jpg","./../kalyani.N/imges/img4.jpg","./../kalyani.N/imges/img5.jpg","./../kalyani.N/imges/img6.jpg","./../kalyani.N/imges/img7.jpg","./../kalyani.N/imges/img8.jpg","./../kalyani.N/imges/img9.jpg","./../kalyani.N/imges/img10.jpg"];
      cardimg.src = images[number-1];
     }
     </script>
