@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>js-project❤</title>
+    <link rel="stylesheet" href="./../../stylesheet/card.css">
+    <link rel="stylesheet" href="./../stylesheet/nav-bar.css">
+    
+</head>
+<body>
+    <div class="main-container">
+ <div class="image-container">
+        <img src="./pb-images/mes01.jpg" class="img-block" id="img-block">
+    </div>
+        <div class="link-box">
+            <input type="text" class="input-box" id="imagelink" value="http://127.0.0.1:5500/kalyani.N/imges/img.jpg"><button class="copy-btn" id="copy-btn"> Copy<img src="./../pratik/pb-images/copy.png" class="cpy-icon" ></button>
+        </div>
+
+</div>
+
+<button class="gen-btn" onclick="generator()">genrate</button>
+
+<script>
+    const copybtn = document.getElementById("copy-btn");
+    copybtn.addEventListener("click",function(){
+        
+        const imgtext = document.getElementById("imagelink");
+        imgtext.select();
+        document.execCommand('copy');
+        alert("link is copied successfully.... 🤙🏻");
+        
+    });
+
+    document.getElementById("result").innerHTML=localStorage.getItem("textvalue")
+
+   function generator(){
+      
+    const min =1 ;
+    const max =10;
+
+    const number = Math.floor(Math.random() * (max - min + 1)) +min;
+     const cardimg = document.getElementById("img-block");
+     const images = ["./pb-images/mes01.jpg", "./pb-images/mes02.jpg","./pb-images/mes03.jpg","./pb-images/mes04.jpg","./pb-images/mes05.jpg","./pb-images/mes06.jpg","./pb-images/mes07.jpg","./pb-images/mes08.jpg","./pb-images/mes09.jpg","./pb-images/mes10.jpg"];
+     cardimg.src = images[number-1];
+
+     const imglink = document.getElementById("imagelink");
+     document.getElementById("imagelink").value=number;
+     
+     
+     if(number==1)
+    {
+        document.getElementById("imagelink").value="http://127.0.0.1:5500/kalyani.N/imges/img.jpg";
+    }
+    else if(number==2)
+    {
+        document.getElementById("imagelink").value="http://127.0.0.1:5500/kalyani.N/imges/img2.jpg";
+    }
+    else if(number==3)
+    {
+        document.getElementById("imagelink").value="https://wallpapercave.com/wp/wp5136710.jpg";
+    }
+    else if(number==4)
+    {
+        document.getElementById("imagelink").value="https://th.bing.com/th/id/R.f493fcb0e2ebf057afffeea7eb328485?rik=kO%2bRlEW0i2WlFQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-R8fGuQKCCQU%2fUFGVrFRSGfI%2fAAAAAAAAEis%2f6W86hSH1dXY%2fs1600%2fsdffdfdd.jpg&ehk=bRMYhxrZk43hQHcIzZsXBoexbyb3rnPXAjpYiBF5sXU%3d&risl=&pid=ImgRaw&r=0";
+    }
+    else if(number==5)
+    {
+        document.getElementById("imagelink").value="https://th.bing.com/th/id/R.baa9135978a1a9b0b6fd7bae628f10c8?rik=ONYEyyQCZyS8Tw&riu=http%3a%2f%2fwww.photohowto.info%2ffiles%2fimages%2fhowto%2f2008%2f03%2fwildlife%2fwildlife-1.jpg&ehk=SydSBE7F%2bCEzfT4T0vRVTZLF0S6pPd9LSweoiaB0V2s%3d&risl=&pid=ImgRaw&r=0";
+    }
+    else if(number==6)
+    {
+        document.getElementById("imagelink").value="https://th.bing.com/th/id/R.49c6fe8bc75e3ebeb92dd0116ee3e77f?rik=k8sC4NThi%2bQR5g&riu=http%3a%2f%2f1.bp.blogspot.com%2f-HbtwA_31J1k%2fT7PDwD9regI%2fAAAAAAAAKv4%2fv-QUWi_WT0g%2fs1600%2f001-burrard-lucas-african-wildlife-photography-leopard_cub.jpg&ehk=y2FaJwBartkAtiw5NlFc%2fOjwglszLZ0TSfMh6Mtz%2fQY%3d&risl=&pid=ImgRaw&r=0";
+    }
+    else if(number==7)
+    {
+        document.getElementById("imagelink").value="https://i.pinimg.com/originals/1c/25/49/1c254912bc3ed6a828e7bdf389c50f30.jpg";
+    }
+    else if(number==8)
+    {
+        document.getElementById("imagelink").value="https://th.bing.com/th/id/R.d42b59a64a993000de994905605686d8?rik=6iIt8rYQLnwTYg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-cOvOYi_aa74%2fUFGWmBPtlgI%2fAAAAAAAAEpk%2fb6ltttxvwwg%2fs1600%2fwildlifes.jpg&ehk=vtrkSMUdBFEZu5qdjIsfHTHONpOWoxm8s7t2MAtO%2bjw%3d&risl=&pid=ImgRaw&r=0";
+    }
+    else if(number==9)
+    {
+        document.getElementById("imagelink").value="https://th.bing.com/th/id/OIP.OV1Fzxr5XvYJ8mbDEYDb3gHaE7?pid=ImgDet&rs=1";
+    }
+    else{
+        document.getElementById("imagelink").value="https://th.bing.com/th/id/R.5ca0de843670806b08612a404c4579d3?rik=q48b4fUf7pwYVw&riu=http%3a%2f%2fwebneel.com%2fdaily%2fsites%2fdefault%2ffiles%2fimages%2fdaily%2f04-2013%2f13-best-bird-photography-by-christopher.jpg&ehk=7m99fudi9x34YMAYIIUqPttpLKvBOBAV9v2bKD%2fkT6Q%3d&risl=&pid=ImgRaw&r=0";
+    }
+    }
+
+
+   
+   
+</script>
+</body>
+</html>
