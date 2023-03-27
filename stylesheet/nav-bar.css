@@ -1,52 +1,98 @@
+body{
+    margin: 0;
+    padding: 0px;
+    background-color: black;
+}
+.nav-bar-container{
+display: flex;
+width: 100%;
+justify-content: space-around;
+background-color: black;
+padding-top: 30px;
+}
+@media screen and (min-width:400px) and (max-width:500px) {
+.nav-bar-container{
+display: flex;
+width: 100%;
+justify-content: space-around;
 
-        body{
-            margin: 0;
-            padding: 0px;
-            background-color: black;
-        }
-    .nav-bar-container{
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-      
-        padding-top: 30px;
-    }
-    .nav-btn{
-        font-size: 16px;
-        background-color: black;
-        color: white;
-        border: 0px solid black;
-        padding: 15px;
-        cursor: pointer;
-    }
-    .nav-btn:hover{
-        border-bottom: 4px solid white;
-    
-        transition: 1.5s;
-    }
-    .nav-text{
-        font-family: fantasy;
-        font-size: 30px;
-        color: rgb(93, 2, 178);
-    }
-    .img-beg{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        height:450px;
-       
-    }
-    .move-btn{
-        display: block;
-        margin: 0px auto;
-        width: 10%;
-        background-color:rgb(93, 2, 178) ;
-        height: 30px;
-        border-radius: 10px;
-        color: aliceblue;
-  }
-  .move-btn:hover{
-   background-color: aliceblue;
-   transition: 1.5s;
-    color: black;
-  }
+padding-top: 30px;
+}
+}
+.nav-btn{
+font-size: 16px;
+background-color: black;
+color: white;
+border: 0px solid black;
+padding: 15px;
+cursor: pointer;
+}
+@media screen and (min-width:300px) and (max-width:700px) {
+.nav-btn{
+font-size: 13px;
+background-color: black;
+color: white;
+border: 0px solid black;
+padding: 15px;
+cursor: pointer;
+}
+}
+.nav-btn:hover{
+border-bottom: 4px solid white;
+
+transition: 1.5s;
+}
+.nav-text{
+font-family: fantasy;
+font-size: 30px;
+color: rgb(93, 2, 178);
+}
+@media screen and (min-width:300px) and (max-width:700px){
+.nav-text{ font-family:fantasy;
+font-size: 17px;
+color: rgb(93, 2, 178);
+}
+
+
+}
+.img-beg{
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:450px;
+
+}
+@media screen and (min-width:300px) and (max-width:800px){
+.img-beg{
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:300px;
+}
+}    
+
+.move-btn{
+display: block;
+margin: 0px auto;
+width: 10%;
+background-color:rgb(93, 2, 178) ;
+height: 30px;
+border-radius: 10px;
+color: aliceblue;
+}
+@media screen and (min-width:300px) and (max-width:800px) {
+.move-btn{
+display: block;
+margin: 0px auto;
+width: 20%;
+background-color:rgb(93, 2, 178) ;
+height: 30px;
+border-radius: 10px;
+color: aliceblue;
+}
+}
+.move-btn:hover{
+background-color: aliceblue;
+transition: 1.5s;
+color: black;
+}

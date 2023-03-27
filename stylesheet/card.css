@@ -1,65 +1,98 @@
-body{
-    background: url("./../pratik/pb-images/bg-key.jpg")no-repeat;
-    background-size: cover;
-     }
-     .main-container{
-         display: block;
-         height: auto;
-         width: 900px;
-         border: 2px solid white;
-         margin: 20px auto;
-         backdrop-filter: blur(15px);
-         border-radius: 20px;
 
-     }
-  .image-container{
-     display: block;
-     width: 70%;
-     height: auto;
-     margin: 30px auto;
-     border-radius: 10px;
-     background: transparent;
-     
-
-  }
-  .gen-btn{
-     display:block;
-     margin: 30px auto;
-  }
-  .img-block{
-     height:380px;
-     width: 100%;
-  }
-  .gen-btn{
-     color: aliceblue;
-     background-color:blueviolet;
-     width: 120px;
-     height: 40px;
-     border-radius: 30px;
-  }
-  .gen-btn:hover{
-     background-color: aliceblue;
-     color: black;
-  }
-  .link-box{
-     display:flex;
-     width:100%;
-     justify-content: center;
-     height:auto;
-  }
-  .input-box{
-     width: 65%;
-  }
-  .copy-btn{
-     color: aliceblue;
-     background-color:blueviolet;
-  }
-  .cpy-icon{
-     height: 20px;
-    
-  }
-  .copy-btn:hover{
-     background-color: aliceblue;
-     color: black;
-  }
- </style>
+        body{
+            background: url("./../pratik/pb-images/bg-key.jpg")no-repeat;
+            background-size: cover;
+             }
+             
+             
+             .main-container{
+                 display: block;
+                 height: auto;
+                 width: 900px;
+                 border: 2px solid white;
+                 margin: 20px auto;
+                 backdrop-filter: blur(15px);
+                 border-radius: 20px;
+          }
+          @media screen and (min-width:400px) and (max-width:800px) {
+            .main-container{
+                 display: block;
+                 height: auto;
+                 width: 400px;
+                 border: 2px solid white;
+                 margin: 20px auto;
+                 backdrop-filter: blur(15px);
+                 border-radius: 20px;
+          }
+        }
+          @media screen and (min-width:800px) and (max-width:1200px) {
+            .main-container{
+                 display: block;
+                 height: auto;
+                 width: 650px;
+                 border: 2px solid white;
+                 margin: 20px auto;
+                 backdrop-filter: blur(15px);
+                 border-radius: 20px;
+          }
+          }
+          .image-container{
+             display: block;
+             width: 70%;
+             height: auto;
+             margin: 30px auto;
+             border-radius: 10px;
+             background: transparent;
+             }
+             @media screen and (min-width:800px) {
+            .image-container{
+             display: block;
+             width: 70%;
+             height: auto;
+             margin: 30px auto;
+             border-radius: 10px;
+             background: transparent;
+             }
+             }
+          .gen-btn{
+             display:block;
+             margin: 30px auto;
+          }
+          .img-block{
+             height:380px;
+             width: 100%;
+          }
+          .gen-btn{
+             color: aliceblue;
+             background-color:blueviolet;
+             width: 120px;
+             height: 40px;
+             border-radius: 30px;
+          }
+          .gen-btn:hover{
+             background-color: aliceblue;
+             color: black;
+          }
+          .link-box{
+             display:flex;
+             width:100%;
+             justify-content: center;
+             height:auto;
+             margin-bottom: 10px;
+          }
+          .input-box{
+             width: 65%;
+          }
+          .copy-btn{
+             color: aliceblue;
+             background-color:blueviolet;
+          }
+          .cpy-icon{
+             height: 20px;
+            
+          }
+          .copy-btn:hover{
+             background-color: aliceblue;
+             color: black;
+          }
+         
