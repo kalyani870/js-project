@@ -26,15 +26,30 @@
     </style>
 </head>
 <body>
+
 <div class="dropdown">
-    <label for="photo">choose your option</label>
+   <label for="photo">choose your option</label>
+   <form action="kalyani.N/kalyaniN.html" >
     <select name="photo" id="photo">
         <option value="sunset">sunset</option>
         <option value="sunset">Sunrise</option>
-        <option value="sunset">Wildlife</option>
+        <option value="sunset"  id="photography">Wildlife</option>
         <option value="sunset">marvel</option>
         <option value="sunset">Moral</option>
-    </select>
+    </select> 
+    <div><input type="submit" value="click" onclick="passvalue();"/></div>
+    </form>
+
 </div>
+<div><input type="submit" value="click" onclick="passvalue();"/></div>
+
+<script>
+    function passvalue()
+        {
+            const photography = document.getElementById("photography").value;
+            localStorage.setItem("textvalue",photography);
+            return false ;
+        }
+</script>
 </body>
 </html>

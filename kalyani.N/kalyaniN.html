@@ -1,72 +1,12 @@
-<title>Document</title>
-    <style>
-        body{
-       background: url("./../pratik/pb-images/bg-key.jpg")no-repeat;
-       background-size: cover;
-        }
-        .main-container{
-            display: block;
-            height: auto;
-            width: 900px;
-            border: 2px solid white;
-            margin: 20px auto;
-            backdrop-filter: blur(15px);
-            border-radius: 20px;
-
-        }
-     .image-container{
-        display: block;
-        width: 70%;
-        height: auto;
-        margin: 30px auto;
-        border-radius: 10px;
-        background: transparent;
-        
-
-     }
-     .gen-btn{
-        display:block;
-        margin: 30px auto;
-     }
-     .img-block{
-        height:380px;
-        width: 100%;
-     }
-     .gen-btn{
-        color: aliceblue;
-        background-color:blueviolet;
-        width: 120px;
-        height: 40px;
-        border-radius: 30px;
-     }
-     .gen-btn:hover{
-        background-color: aliceblue;
-        color: black;
-     }
-     .link-box{
-        display:flex;
-        width:100%;
-        justify-content: center;
-        height:auto;
-     }
-     .input-box{
-        width: 65%;
-     }
-     .copy-btn{
-        color: aliceblue;
-        background-color:blueviolet;
-     }
-     .cpy-icon{
-        height: 20px;
-       
-     }
-     .copy-btn:hover{
-        background-color: aliceblue;
-        color: black;
-     }
-    </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>js-project❤️</title>
+    <link rel="stylesheet" href="./../../stylesheet/card.css">
+    
 </head>
 <body>
+    <span id="result"></span>
     <div class="main-container">
  <div class="image-container">
         <img src="./imges/img.jpg" class="img-block" id="img-block">
@@ -89,6 +29,8 @@
         alert("link is copied successfully.... 🤙🏻");
         
     });
+
+    document.getElementById("result").innerHTML=localStorage.getItem("textvalue")
 
    function generator(){
       
