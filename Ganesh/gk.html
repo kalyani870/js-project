@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>js-project❤️</title>
+    <link rel="stylesheet" href="./../../stylesheet/card.css">
+    
+</head>
+<body>
+    <span id="result"></span>
+    <div class="main-container">
+ <div class="image-container">
+        <img src="./sunset img/sun1.jpg" class="img-block" id="img-block">
+    <button class="gen-btn" onclick="generator()">genrate</button>
+</div>
+<div class="link-box">
+    <input type="text" class="input-box" id="imagelink" value="https://www.reconnectwithnature.org/getmedia/ad4f644a-3620-4023-8291-2458aba65cbd/Sunset-Lake-Renwick-Heron-Rookery-Chris-Cheng-July-2019-7.jpg?width=2000&height=1296&ext=.jpg"><button class="copy-btn" id="copy-btn"> Copy<img src="./../pratik/pb-images/copy.png" class="cpy-icon" ></button>
+</div>
+</div>
+
+
+<script>
+
+    const copybtn = document.getElementById("copy-btn");
+    copybtn.addEventListener("click",function(){
+        
+        const imgtext = document.getElementById("imagelink");
+        imgtext.select();
+        document.execCommand('copy');
+        alert("link is copied successfully.... 🤙🏻");
+        
+    });
+
+    document.getElementById("result").innerHTML=localStorage.getItem("textvalue")
+
+   function generator(){
+      
+    const min =1 ;
+    const max =10;
+
+    const number = Math.floor(Math.random() * (max - min + 1)) +min;
+     const cardimg = document.getElementById("img-block");
+     const images = ["./../Ganesh/sunset img/sun1.jpg","./../Ganesh/sunset img/sun2.jpg","./../Ganesh/sunset img/sun3.jpg","./../Ganesh/sunset img/sun4.jpg","./../Ganesh/sunset img/sun5.jpg","./../Ganesh/sunset img/sun6.jpg","./../Ganesh/sunset img/sun7.jpg","./../Ganesh/sunset img/sun8.jpg","./../Ganesh/sunset img/sun9.jpg","./../Ganesh/sunset img/sun10.jpg"];
+     cardimg.src = images[number-1];
+
+     const imglink = document.getElementById("imagelink");
+     document.getElementById("imagelink").value=number;
+     
+     
+     if(number==1)
+    {
+        document.getElementById("imagelink").value="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Focean-sunset.html&psig=AOvVaw3dxYQXKuPlL2wiYs8zZCC7&ust=1680000821650000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKDPgvP4-_0CFQAAAAAdAAAAABAD";
+    }
+    else if(number==2)
+    {
+        document.getElementById("imagelink").value="https://upload.wikimedia.org/wikipedia/commons/5/58/Sunset_2007-1.jpg";
+    }
+    else if(number==3)
+    {
+        document.getElementById("imagelink").value="https://www.thephotoargus.com/wp-content/uploads/2019/09/sunsetbarry.jpg";
+    }
+    else if(number==4)
+    {
+      document.getElementById("imagelink").value="https://images.unsplash.com/photo-1533537124921-db3248c9fa93?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHw%3D&w=1000&q=80 ";
+    }
+    else if(number==5)
+    {
+      document.getElementById("imagelink").value="https://media.istockphoto.com/id/621380988/photo/woman-silhouette-watching-sun-at-sunset.jpg?s=170667a&w=0&k=20&c=TErcV_hr4zMZrj7JAbJkbsQGboTEyDhvL1Qd_7Kh8dk=";
+      
+    }
+    else if(number==6)
+    {
+      document.getElementById("imagelink").value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTSeAAr0XTqFx10mtODXuY7loDRIpQDpDNKo0Vi_3Frw&usqp=CAU&ec=48665701";
+    
+    }
+    else if(number==7)
+    {
+      document.getElementById("imagelink").value="https://shotkit.com/wp-content/uploads/2020/07/sunrisesunset004.jpg";
+    }
+    else if(number==8)
+    {
+      document.getElementById("imagelink").value="https://img-aws.ehowcdn.com/1280x/www.onlyinyourstate.com/wp-content/uploads/2022/02/L1meyFlickr.jpg";
+    }
+    else if(number==9)
+    {
+      document.getElementById("imagelink").value="https://media.istockphoto.com/id/1333863903/photo/disintegrating-storm-clouds-dispersing-at-sunset.jpg?b=1&s=170667a&w=0&k=20&c=eEn3iRvaLSk4bK4VVTZukcbR0gk3azkBAfKY-EaDNKk=";
+    }
+    else{
+      document.getElementById("imagelink").value="https://uniquevillastbarth.com/wp-content/uploads/2023/02/sunset-in-st-barth.jpg";
+    }
+    }
+
+
+   
+   
+</script>
+</body>
+</html>
