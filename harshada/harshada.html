@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>js-project❤️</title>
+    <link rel="stylesheet" href="./../../stylesheet/card.css">
+    
+</head>
+<body>
+    <span id="result"></span>
+    <div class="main-container">
+ <div class="image-container">
+        <img src="./imges/img.jpg" class="img-block" id="img-block">
+    <button class="gen-btn" onclick="generator()">genrate</button>
+</div>
+<div class="link-box">
+    <input type="text" class="input-box" id="imagelink" value="https://i.pinimg.com/564x/bd/eb/c3/bdebc3dbb17f0bd24bc2ab5eb91f42d2.jpg
+    "><button class="copy-btn" id="copy-btn"> Copy<img src="./../pratik/pb-images/copy.png" class="cpy-icon" ></button>
+</div>
+</div>
+
+
+<script>
+
+    const copybtn = document.getElementById("copy-btn");
+    copybtn.addEventListener("click",function(){
+        
+        const imgtext = document.getElementById("imagelink");
+        imgtext.select();
+        document.execCommand('copy');
+        alert("link is copied successfully.... 🤙🏻");
+        
+    });
+
+    document.getElementById("result").innerHTML=localStorage.getItem("textvalue")
+
+   function generator(){
+      
+    const min =1 ;
+    const max =8;
+
+    const number = Math.floor(Math.random() * (max - min + 1)) +min;
+     const cardimg = document.getElementById("img-block");
+     const images = ["./../harshada/images/iron-man.jpg", "./../harshada/images/thor.jpg","./../harshada/images/caption-america.jpg","./../harshada/images/dr strange.jpg","./../harshada/images/ntasha.jpg","./../harshada/images/marval.jpg","./../harshada/images/clint.jpg","./../harshada/images/nick.jpg"];
+     cardimg.src = images[number-1];
+
+     const imglink = document.getElementById("imagelink");
+     document.getElementById("imagelink").value=number;
+     
+     
+     if(number==1)
+    {
+        document.getElementById("imagelink").value="https://i.pinimg.com/564x/bd/eb/c3/bdebc3dbb17f0bd24bc2ab5eb91f42d2.jpg";
+
+    }
+    else if(number==2)
+    {
+        document.getElementById("imagelink").value="https://i.pinimg.com/564x/44/d7/b2/44d7b211cc78b9532b7e6dd5f3e5d9ad.jpg";
+    }
+    else if(number==3)
+    {
+        document.getElementById("imagelink").value="https://i.pinimg.com/564x/f1/52/46/f152463fe1271bae5bae5c71376b2434.jpg";
+    }
+    else if(number==4)
+    {
+        document.getElementById("imagelink").value="https://i.pinimg.com/564x/60/45/5a/60455a3104b5474180b3da890f2d487f.jpg";
+    }
+    else if(number==5)
+    {
+        document.getElementById("imagelink").value="https://i.pinimg.com/564x/5a/d8/dc/5ad8dc42b599d7d78f17e87cab5114c1.jpg";
+    }
+    else if(number==6)
+    {
+        document.getElementById("imagelink").value="https://i.pinimg.com/564x/a8/82/48/a8824820d37c899d0f461cdd6edf27ea.jpg";
+    }
+    else if(number==7)
+    {
+        document.getElementById("imagelink").value="https://i.pinimg.com/originals/1c/25/49/1c254912bc3ed6a828e7bdf389c50f30.jpg";
+    }
+    else if(number==8)
+    {
+        document.getElementById("imagelink").value="https://i.pinimg.com/564x/47/73/02/477302369230a4f6cac5cbd78c2c6b10.jpg";
+    }
+    else 
+    {
+        document.getElementById("imagelink").value="https://i.pinimg.com/564x/af/17/d4/af17d4d567d897034604a2dddc905eb4.jpg";
+    }
+    
+    }
+
+
+   
+   
+</script>
+</body>
+</html>
